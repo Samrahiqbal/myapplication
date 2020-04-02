@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">My Application</string>
+    <string name="register">REGISTER</string>
+    <string name="todo">TODO</string>
+    <string name="todo1" tools:ignore="DuplicateDefinition">TODO</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="forgot_password_click_here">Forgot Password?Click Here</string>
+    <string name="register_here">Register Here</string>
+    <string name="login">LOGIN</string>
+    <string name="skip">Skip</string>
+</resources>

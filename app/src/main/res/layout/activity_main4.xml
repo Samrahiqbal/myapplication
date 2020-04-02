@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sidedash"
+    tools:context=".Main4Activity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/ic_person_add_black_24dp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            app:errorEnabled="true"
+            tools:ignore="DuplicateIds,NotSibling">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="354dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:autofillHints=""
+                app:drawableStartCompat="@drawable/ic_person_add_black_24dp"
+                android:ems="10"
+                android:background="@color/cardview_shadow_end_color"
+                android:hint="Enter Full Name"
+                android:inputType="textPersonName"
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                tools:ignore="RtlCompat"/>
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="354dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv"
+                android:layout_centerHorizontal="true"
+                android:background="@color/cardview_shadow_end_color"
+                android:layout_gravity="center"
+                app:drawableStartCompat="@drawable/ic_sentiment_satisfied_black_24dp"
+                android:ems="10"
+                android:hint="Enter Age"
+                android:inputType="number"
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                tools:ignore="RtlCompat"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtage"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="354dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                app:drawableStartCompat="@drawable/ic_cake_black_24dp"
+                android:ems="10"
+                android:background="@color/cardview_shadow_end_color"
+                android:hint="Enter Date of Birth"
+                android:inputType="date"
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                tools:ignore="RtlCompat"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="354dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                app:drawableStartCompat="@drawable/ic_contact_phone_black_24dp"
+                android:ems="10"
+                android:hint="Enter Mobile number"
+                android:background="@color/cardview_shadow_end_color"
+                android:inputType="phone"
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                tools:ignore="RtlCompat"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobile"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="354dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobile"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@color/cardview_shadow_end_color"
+                app:drawableStartCompat="@drawable/ic_person_pin_circle_black_24dp"
+                android:ems="10"
+                android:hint="Enter Pincode"
+                android:inputType="textPostalAddress"
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                tools:ignore="RtlCompat"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pin"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="354dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pin"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                app:drawableStartCompat="@drawable/ic_email_black_24dp"
+                android:ems="10"
+                android:background="@color/cardview_shadow_end_color"
+                android:hint="Enter Email Address"
+                android:inputType="textEmailAddress"
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                tools:ignore="RtlCompat"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtmail"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            app:counterMaxLength="8"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/color1"
+            tools:ignore="UnknownId">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="354dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtmail"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                app:drawableStartCompat="@drawable/ic_lock_black_24dp"
+                android:ems="10"
+                android:background="@color/cardview_shadow_end_color"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                tools:ignore="RtlCompat"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="Select Your Gender"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+
+        <RadioGroup
+            android:id="@+id/rd"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="5dp">
+
+
+            <RadioButton
+                android:id="@+id/rd1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Male"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+            <RadioButton
+                android:id="@+id/rd2"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Female"
+                android:textSize="18sp"
+                android:textStyle="bold|normal" />
+
+            <RadioButton
+                android:id="@+id/rd3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Others"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+        </RadioGroup>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_button"
+            android:text="@string/register"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            tools:ignore="UnknownId" />
+
+
+    </RelativeLayout>
+</ScrollView>
